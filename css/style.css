@@ -1,3 +1,99 @@
-body{
-    background-color: black;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --headerpadding: 3rem;
+}
+
+header {
+  background-color: #000;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: var(--headerpadding);
+  padding-right: var(--headerpadding);
+}
+
+header > ul {
+  display: inline-flex;
+  list-style: none;
+}
+header > ul > li {
+  margin: 0 1rem;
+}
+
+img[src="img/torta.jpeg"] {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+main {
+  display: flex;
+}
+
+aside {
+  background-color: lightsteelblue;
+  height: 100%;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+aside > img[src="img/torta.jpeg"] {
+  margin: 2rem 0;
+}
+aside > ul {
+  list-style: none;
+}
+aside a {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  color: greenyellow;
+  transition: 0.5s;
+  text-shadow: blue;
+}
+header li:hover{
+    transition: 0.5s;
+    transform: rotate(-5deg);
+}
+header li.pair:hover{
+    transition: 5s;
+    transform: rotate(1800deg);
+}
+section {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.rotore {
+  width: 10rem;
+  height: 20rem;
+  background-color: darkviolet;
+}
+
+.rotore:hover {
+  transition: 1.2s;
+  transform: rotate(20deg) scale(1.2);
+  font-size: 2rem;
+  color: red;
+}
+
+
+main {
+  background-color: violet;
+  height: 100vh;
+  width: 100%;
 }
